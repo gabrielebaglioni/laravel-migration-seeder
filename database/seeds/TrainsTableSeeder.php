@@ -29,8 +29,7 @@ class TrainsTableSeeder extends Seeder
 
             // da libreria FakerPHP
             $newTrain->departure_station = $faker->city();
-            $newTrain->arrival_station = $faker->city();
-            $newTrain->departure_date = $faker->dateTimeThisMonth('+ 60 days');
+            $newTrain->departure_date= $faker->dateTimeThisMonth('+ 60 days');
             $newTrain->arrival_date = $faker->dateTimeThisMonth('+ 60 days');
             $newTrain->departure_time = $faker->time();
             $newTrain->arrival_time = $faker->time();
